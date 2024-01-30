@@ -3,6 +3,7 @@ import Link from "next/link";
 import api from "@/api";
 
 export const dynamic = "force-dynamic"
+export const revalidate = 100
 
 export default async function Home() {
   const restaurants = await api.list();
